@@ -1,5 +1,5 @@
 # Queribus
-Queribus is a query dispatcher for Unity. It allows you to poll your codebase for numerical sums, boolean composites (ORs/ANDs) or votes.
+Queribus is a query dispatcher for Unity. It allows you to poll your codebase for numerical collations (sums, min, max), boolean collations (ORs/ANDs) or votes.
 
 Inspired by [Unibus](https://github.com/mattak/Unibus), which is a great companion to Queribus.
 
@@ -17,7 +17,7 @@ You can read more about my motivations for query dispatching [here](https://molt
 
 Each query has three components: a query type, a name and a subject.
 
-- The **query type** determines what data type the query will operate on (boolean, int, float, vote) and, if a boolean, what collation operation it will perform (OR, AND).
+- The **query type** determines what data type the query will operate on (boolean, int, float, vote) and, if a boolean or number, what collation operation it will perform (OR/AND, Sum/Min/Max).
 - The **name** is a unique string used to identify the query.
 - The **subject** is an object of a selected type that is passed to every subscriber when the query is dispatched. It's role is to provide context for the question being asked.
 
